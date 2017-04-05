@@ -5,12 +5,12 @@ class Instrument extends JsonApiView {
     return ['name', 'slug'];
   }
 
-  exercises() {
-    return this.hasMany('App/Http/JsonApiViews/Challenge', {
-      included: true,
-      excludeRelation: 'instrument'
-    });
-  }
+  // exercises() {
+  //   return this.hasMany('App/Http/JsonApiViews/Challenge', {
+  //     included: true,
+  //     excludeRelation: 'instrument'
+  //   });
+  // }
 
 }
 
