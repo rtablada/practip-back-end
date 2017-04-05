@@ -24,7 +24,7 @@ class InstrumentController {
 
   * show(request, response) {
     const id = request.param('id');
-    const instrument = yield Instrument.with(...withRelations).where({ id }).firstOrFail();
+    const instrument = yield Instrument.with(...withRelations).where({ slug: id }).firstOrFail();
 
     response.jsonApi('Instrument', instrument);
   }
@@ -37,7 +37,7 @@ class InstrumentController {
     const foreignKeys = {
     };
 
-    const instrument = yield Instrument.with(...withRelations).where({ id }).firstOrFail();
+    const instrument = yield Instrument.with(...withRelations).where({ slug: id }).firstOrFail();
     instrument.fill(Object.assign({}, input, foreignKeys));
     yield instrument.save();
 
@@ -47,7 +47,7 @@ class InstrumentController {
   * destroy(request, response) {
     const id = request.param('id');
 
-    const instrument = yield Instrument.query().where({ id }).firstOrFail();
+    const instrument = yield Instrument.query().where({ slug: id }).firstOrFail();
     yield instrument.delete();
 
     response.status(204).send();

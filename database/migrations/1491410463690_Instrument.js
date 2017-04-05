@@ -7,9 +7,9 @@ class InstrumentSchema extends Schema {
   up() {
     this.create('instruments', (table) => {
       table.increments();
-      table.string,('name');
-      table.string,('slug');
-      
+      table.string('name');
+      table.string('slug');
+
       table.timestamps();
     });
   }
