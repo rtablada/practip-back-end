@@ -6,7 +6,7 @@ class Instrument extends JsonApiView {
   }
 
   exercises() {
-    return this.hasMany('App/Http/JsonApiViews/Exercise', {
+    return this.hasMany('App/Http/JsonApiViews/Challenge', {
       included: true,
       excludeRelation: 'instrument'
     });

@@ -6,7 +6,7 @@ const attributes = ['name', 'slug'];
 class InstrumentController {
 
   * index(request, response) {
-    const instruments = yield Instrument.with('exercises').fetch();
+    const instruments = yield Instrument.with('challenges').fetch();
 
     response.jsonApi('Instrument', instruments);
   }
@@ -22,7 +22,7 @@ class InstrumentController {
 
   * show(request, response) {
     const id = request.param('id');
-    const instrument = yield Instrument.with('exercises').where({ id }).firstOrFail();
+    const instrument = yield Instrument.with('challenges').where({ id }).firstOrFail();
 
     response.jsonApi('Instrument', instrument);
   }
@@ -35,7 +35,7 @@ class InstrumentController {
     const foreignKeys = {
     };
 
-    const instrument = yield Instrument.with('exercises').where({ id }).firstOrFail();
+    const instrument = yield Instrument.with('challenges').where({ id }).firstOrFail();
     instrument.fill(Object.assign({}, input, foreignKeys));
     yield instrument.save();
 
