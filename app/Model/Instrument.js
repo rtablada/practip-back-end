@@ -13,7 +13,7 @@ class Instrument extends Lucid {
      * database.
      */
     this.addHook('beforeCreate', function * (next) {
-      this.slug = slug(this.title);
+      this.slug = slug(this.title || '', { lower: true });
 
       yield next;
     });

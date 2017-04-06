@@ -2,7 +2,7 @@ const JsonApiView = require('adonis-jsonapi/src/JsonApiView');
 
 class Instrument extends JsonApiView {
   get attributes() {
-    return ['name', 'slug'];
+    return ['title', 'slug'];
   }
 
   // exercises() {

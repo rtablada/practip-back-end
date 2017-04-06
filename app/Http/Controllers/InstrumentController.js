@@ -1,7 +1,7 @@
-'use strict';
+ 'use strict';
 
 const Instrument = use('App/Model/Instrument');
-const attributes = ['name', 'slug'];
+const attributes = ['title', 'slug'];
 const withRelations = [];
 // const withRelations = ['challenges'];
 
