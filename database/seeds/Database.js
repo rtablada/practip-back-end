@@ -13,14 +13,14 @@
 */
 
 const Instrument = use('App/Model/Instrument');
-const instrumentData = require('./data/instruments');
+const instrumentData = require('../data/instruments');
 
 class DatabaseSeeder {
 
   * run () {
     for (var i = 0; i < instrumentData.length; i++) {
-      const name = instrumentData[i];
-      yield Instrument.create({name});
+      const title = instrumentData[i];
+      yield Instrument.create({title});
     }
   }
 
