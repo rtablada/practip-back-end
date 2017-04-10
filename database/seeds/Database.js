@@ -12,12 +12,16 @@
 |
 */
 
-// const Factory = use('Factory')
+const Instrument = use('App/Model/Instrument');
+const instrumentData = require('./data/instruments');
 
 class DatabaseSeeder {
 
   * run () {
-    // yield Factory.model('App/Model/User').create(5)
+    for (var i = 0; i < instrumentData.length; i++) {
+      const name = instrumentData[i];
+      yield Instrument.create({name});
+    }
   }
 
 }

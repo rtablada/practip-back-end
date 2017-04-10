@@ -154,13 +154,13 @@ adonis-generators@^0.7.0:
     randomstring "^1.1.4"
     repl-plus "^0.2.0"
 
-adonis-jsonapi@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/adonis-jsonapi/-/adonis-jsonapi-0.7.0.tgz#d8ca2e762411574d31968871e43f85b2a3ebf39b"
+adonis-jsonapi@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/adonis-jsonapi/-/adonis-jsonapi-0.8.1.tgz#74099a91e3bb4c756ddc7249ba9c6f046189aa36"
   dependencies:
     change-case "^3.0.0"
     i "^0.3.5"
-    jsonapi-serializer "^3.3.0"
+    jsonapi-serializer "^3.5.0"
     lodash.keysin "^4.2.0"
     lodash.mapkeys "^4.6.0"
     lodash.pick "^4.4.0"
@@ -1995,7 +1995,7 @@ json3@3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
 
-jsonapi-serializer@^3.3.0:
+jsonapi-serializer@^3.5.0:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/jsonapi-serializer/-/jsonapi-serializer-3.5.2.tgz#a74a58ba5f4bec1a3d505a4061b5e728c4289dac"
   dependencies:

@@ -5,6 +5,10 @@ class Instrument extends JsonApiView {
     return ['title', 'slug'];
   }
 
+  get primaryKey() {
+    return 'slug';
+  }
+
   // exercises() {
   //   return this.hasMany('App/Http/JsonApiViews/Challenge', {
   //     included: true,
