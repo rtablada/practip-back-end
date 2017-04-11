@@ -9,12 +9,12 @@ class Instrument extends JsonApiView {
     return 'slug';
   }
 
-  // exercises() {
-  //   return this.hasMany('App/Http/JsonApiViews/Challenge', {
-  //     included: true,
-  //     excludeRelation: 'instrument'
-  //   });
-  // }
+  challenges() {
+    return this.hasMany('App/Http/JsonApiViews/Challenge', {
+      included: true,
+      excludeRelation: 'instrument'
+    });
+  }
 
 }
 
