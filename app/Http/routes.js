@@ -17,4 +17,5 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.resource('/instruments', 'InstrumentController').except(['create', 'edit']);
+Route.resource('/challenges', 'ChallengeController').except(['create', 'edit']);
