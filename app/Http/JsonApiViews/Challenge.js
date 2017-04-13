@@ -15,6 +15,7 @@ class Challenge extends JsonApiView {
   instrument() {
     return this.belongsTo('App/Http/JsonApiViews/Instrument', {
       included: true,
+      ref: 'slug',
       excludeRelation: 'challenges'
     });
   }

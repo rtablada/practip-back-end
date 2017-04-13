@@ -154,9 +154,9 @@ adonis-generators@^0.7.0:
     randomstring "^1.1.4"
     repl-plus "^0.2.0"
 
-adonis-jsonapi@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/adonis-jsonapi/-/adonis-jsonapi-0.8.1.tgz#74099a91e3bb4c756ddc7249ba9c6f046189aa36"
+adonis-jsonapi@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/adonis-jsonapi/-/adonis-jsonapi-0.8.2.tgz#178e78229acc8404bea632cda7e4ae20644b296e"
   dependencies:
     change-case "^3.0.0"
     i "^0.3.5"
